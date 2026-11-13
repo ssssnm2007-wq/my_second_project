@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalie — веб-разработчик</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <!-- СЕКЦИЯ 1: HERO -->
+    <section class="hero" id="hero">
+        <div class="hero__content">
+            <p class="hero__eyebrow">Веб-разработчик • Frontend</p>
+
+            <h1 class="hero__title">
+                Привет! Я Наталья —<br>
+                веб-разработчик
+            </h1>
+
+            <h2 class="hero__subtitle">
+                Создаю быстрые, адаптивные и понятные сайты под ключ
+            </h2>
+
+            <p class="hero__text">
+                5 лет коммерческой разработки: лендинги, корпоративные сайты
+                и интернет-магазины. Работаю с HTML, CSS, JavaScript и
+                современными фреймворками. Помогу превратить идею
+                в работающий продукт.
+            </p>
+
+            <div class="hero__actions">
+                <!-- Кнопка открывает модальное окно через якорь #contact -->
+                <a href="#contact" class="btn btn--primary">
+                    Связаться со мной
+                </a>
+                <a href="#portfolio" class="btn btn--ghost">
+                    Перейти к портфолио ↓
+                </a>
+            </div>
+        </div>
+
+        <div class="hero__media">
+            <img src="natalie.jpg"
+                 alt="Наталья, веб-разработчик"
+                 class="hero__image">
+        </div>
+    </section>
+
+    <!-- ============================================================
+         МОДАЛЬНОЕ ОКНО «СВЯЗАТЬСЯ СО МНОЙ»
+         Открывается по ссылке href="#contact", закрывается по #hero
+         ============================================================ -->
+    <div class="modal" id="contact">
+        <a href="#hero" class="modal__overlay" aria-label="Закрыть"></a>
+
+        <div class="modal__window" role="dialog" aria-labelledby="contact-title">
+            <a href="#hero" class="modal__close" aria-label="Закрыть">×</a>
+
+            <h2 class="modal__title" id="contact-title">Связаться со мной</h2>
+            <p class="modal__subtitle">Выберите удобный способ связи:</p>
+
+            <ul class="contact-list">
+                <li class="contact-list__item">
+                    <span class="contact-list__label">📧 Почта</span>
+                    <a href="mailto:natalie@example.com" class="contact-list__value">
+                        natalie@example.com
+                    </a>
+                </li>
+                <li class="contact-list__item">
+                    <span class="contact-list__label">📱 Телефон</span>
+                    <a href="tel:+375291234567" class="contact-list__value">
+                        +375 (29) 123-45-67
+                    </a>
+                </li>
+                <li class="contact-list__item">
+                    <span class="contact-list__label">✈️ Telegram</span>
+                    <a href="https://t.me/natalie_dev" class="contact-list__value" target="_blank" rel="noopener">
+                        @natalie_dev
+                    </a>
+                </li>
+            </ul>
+
+            <a href="#hero" class="btn btn--primary modal__btn">Понятно, закрыть</a>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         СЕКЦИЯ 2: ПОРТФОЛИО
+         ============================================================ -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">Портфолио</h2>
+        <p class="portfolio__subtitle">Несколько примеров моих работ</p>
+
+        <div class="portfolio__grid">
+
+            <article class="work-card">
+                <div class="work-card__badge">Лендинг</div>
+                <h3 class="work-card__title">Лендинг для онлайн-курса</h3>
+                <p class="work-card__text">
+                    Одностраничный сайт с адаптивной вёрсткой, анимациями
+                    при скролле и формой заявки. Конверсия выросла на 27%.
+                </p>
+                <ul class="work-card__tags">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </article>
+
+            <article class="work-card">
+                <div class="work-card__badge">Интернет-магазин</div>
+                <h3 class="work-card__title">Магазин косметики</h3>
+                <p class="work-card__text">
+                    Каталог с фильтрами, корзина, оформление заказа.
+                    Вёрстка по макету Figma, интеграция с CMS.
+                </p>
+                <ul class="work-card__tags">
+                    <li>HTML</li>
+                    <li>SCSS</li>
+                    <li>React</li>
+                </ul>
+            </article>
+
+            <article class="work-card">
+                <div class="work-card__badge">Корпоративный сайт</div>
+                <h3 class="work-card__title">Сайт строительной компании</h3>
+                <p class="work-card__text">
+                    Многостраничный сайт с формой расчёта стоимости,
+                    галереей объектов и разделом новостей.
+                </p>
+                <ul class="work-card__tags">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                </ul>
+            </article>
+
+        </div>
+    </section>
+
+</body>
+</html>
